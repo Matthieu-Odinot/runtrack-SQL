@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-PASSWORD = "test"
+PASSWORD = os.getenv("PASSWORD")
 
 my_db = mysql.connector.connect(
     host="localhost",
